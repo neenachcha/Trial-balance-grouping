@@ -26,18 +26,18 @@ Once the project moves into development, the press release can be used as a touc
   > Calculations and page layout settings in a spreadsheet are prone to manual error, especially if the spreadsheet are used by multiple user or amateur.
 
 ## Solution ##
-  > Calculations and pay layout will be automatically set.
+  > Calculations and page layout will be automatically set, so you don't need to worry about someone accidentally delete important calculation, or any unexpected change in page layout.
 
 ## Quote from You ##
   > Now you can scale your clients' base!
 
 ## How to Get Started ##
-  1. Go to page /uploadTB then input Company name, year, details, and trial balance numbers.
+  1. Go to page "/uploadTB" then input Company name, year, details, and trial balance numbers.
   2. Click save!
-  3. In /GroupTB page, use dropdown options to choose a group for all accounts shown on this page.
+  3. In "/GroupTB" page, use dropdown options to choose a group for all accounts shown on this page.
   4. Click save!
-  5. In /FS page, you can go back, download file, or save.
-  6. If you want to come back to previously saved FS, you can "Go to /open".
+  5. In "/FS" page, you can go back, download file, or save.
+  6. If you want to come back to previously saved FS, Go to "/open".
 
 ## Customer Quote ##
 - "This is really easy to use!"
