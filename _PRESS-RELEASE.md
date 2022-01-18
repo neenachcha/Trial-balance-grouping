@@ -42,6 +42,6 @@ Once the project moves into development, the press release can be used as a touc
 ## Customer Quote ##
 - "This is really easy to use!"
 - "Good for auditors"
-- "This saved me tons of time. I had been spending a lot of time to adjust the margin, and make the financial statement look nice. Now I can focus on auditing."
+- "This saved me tons of time. I had been spending a lot of time just adjusting the margin, and make the financial statement look nice. Now I can focus on auditing."
 
 ## Please see detail documentation in this link ##
