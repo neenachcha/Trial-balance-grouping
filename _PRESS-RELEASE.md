@@ -17,27 +17,21 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## FS Gen ##
-
-## Generate Financial statement from Trial balance ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+ > Generate Financial statement from Trial balance
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-
-  User can input trial balance number in FS Gen to generate Financial statement in PDF format. FS gen comes with easy to use grouping financial statement element interface. Moreover, the financial statement comes with version control (You can come back to your previous version anytime).
+  > User can input trial balance number in FS Gen to generate Financial statement in PDF format. FS gen comes with easy to use grouping financial statement element interface. Moreover, the financial statement comes with version control (You can come back to your previous version anytime).
 
 ## Problem ##
-  Calculations and page layout settings in a spreadsheet are prone to manual error, especially if the spreadsheet are used by multiple user or amateur.
+  > Calculations and page layout settings in a spreadsheet are prone to manual error, especially if the spreadsheet are used by multiple user or amateur.
 
 ## Solution ##
-  Calculations and pay layout will be automatically set.
+  > Calculations and pay layout will be automatically set.
 
 ## Quote from You ##
-  Now you can scale your clients' base!
+  > Now you can scale your clients' base!
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-  Here are 5 easy steps:
   1. Go to page /uploadTB then input Company name, year, details, and trial balance numbers.
   2. Click save!
   3. In /GroupTB page, use dropdown options to choose a group for all accounts shown on this page.
@@ -46,8 +40,8 @@ Once the project moves into development, the press release can be used as a touc
   6. If you want to come back to previously saved FS, you can "Go to /open".
 
 ## Customer Quote ##
-"This is really easy to use!"
-"Good for auditors"
-"This saved me tons of time. I had been spending a lot of time to adjust the margin, and make the financial statement look nice. Now I can focus on auditing."
+- "This is really easy to use!"
+- "Good for auditors"
+- "This saved me tons of time. I had been spending a lot of time to adjust the margin, and make the financial statement look nice. Now I can focus on auditing."
 
 ## Please see detail documentation in this link ##
