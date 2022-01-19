@@ -1,4 +1,4 @@
-# Financial Statement Generator #
+# FS GEN #
 
 <!--
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,8 +16,8 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
 
-## FS Gen ##
- > Generate Financial statement from Trial balance
+## Financial statement PDF generator ##
+ > Generate Financial statement in PDF form from Trial balance
 
 ## Summary ##
   > User can input trial balance number in FS Gen to generate Financial statement in PDF format. FS gen comes with easy to use grouping financial statement element interface. Moreover, the financial statement comes with version control (You can come back to your previous version anytime).
