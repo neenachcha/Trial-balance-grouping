@@ -4,10 +4,15 @@ import FSElement from  './fselement.jsx';
 var FS = (props) => {
   var fsElementsObj = props.elements;
   var fsElementsArr = [];
+
   for (var name in fsElementsObj) {
-    var value = fsElementsObj[name];
-    var element = [name, value];
-    fsElementsArr.push(element);
+
+    if (name !== 'companyName' &&  name !== 'year') {
+      var value = fsElementsObj[name];
+      var element = [name, value];
+      fsElementsArr.push(element);
+    }
+
   }
 
   var allElement = fsElementsArr.map((element, i) => {
@@ -17,6 +22,8 @@ var FS = (props) => {
   return (
     <div>
       <div>Financial statement</div>
+      <div>Company : {fsElementsObj.companyName}</div>
+      <div>Year : {fsElementsObj.year}</div>
       <table>
         <thead>
           <tr>

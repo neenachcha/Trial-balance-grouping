@@ -1,7 +1,8 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 import TB from './uploadtb/component/tb.jsx';
 import FS from './fs/component/fs.jsx';
+import Open from './openfs/component/openbutton.jsx'
 const axios = require('axios');
 
 class App extends React.Component {
@@ -13,12 +14,15 @@ class App extends React.Component {
   }
 
   sendData (elements) {
-
+    console.log('This is sent: ', elements);
     axios.post('/uploadtb', elements)
       .then((res) => {
         this.setState({
           fsElements: res.data
         })
+      })
+      .then(() => {
+        console.log('App state: ', this.state.fsElements);
       });
   }
 
@@ -27,6 +31,7 @@ class App extends React.Component {
       <div>
         <TB onSubmit={this.sendData.bind(this)}/>
         <FS elements={this.state.fsElements}/>
+        <Open />
       </div>
     )
   }

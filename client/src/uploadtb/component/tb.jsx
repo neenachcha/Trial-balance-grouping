@@ -1,10 +1,13 @@
 import React from 'react';
 import TBElement from './tbElement.jsx';
+import CompanyInfo from './companyinfo.jsx';
 
 class TB extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
+      companyName: '',
+      year: '',
       'cash': [0, 'choose'],
       'account receivable': [0, 'choose'],
       'account payable': [0, 'choose'],
@@ -16,6 +19,13 @@ class TB extends React.Component {
       'salary expense': [0, 'choose'],
       'other expense': [0, 'choose']
     }
+  }
+
+  updateCompanyInfo (companyName, year) {
+    this.setState({
+      companyName: companyName,
+      year: year
+    })
   }
 
   updateTBElements (name, amount, group) {
@@ -69,12 +79,17 @@ class TB extends React.Component {
     var elements = ['cash', 'account receivable', 'account payable', 'paid up capital', 'prior year equity', 'income from invesment', 'revenue from sales', 'cost of good sold', 'salary expense', 'other expense'];
 
     var tbElement = elements.map((element, index) => {
-      return <TBElement onSubmit={this.updateTBElements.bind(this)} description={element} key={index} />
+      return <TBElement
+              onSubmit={this.updateTBElements.bind(this)}
+              description={element}
+              key={index}
+            />
     });
 
     return (
       <form action="/uploadtb" method="POST">
         <div>Trial Balance</div>
+        <CompanyInfo handleCompanyInfo={this.updateCompanyInfo.bind(this)}/>
         <table>
           <thead>
             <tr>
