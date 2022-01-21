@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 const port = 3000;
 import bodyParser from 'body-parser';
-import save from './database.js';
+import { save, getFS } from './database.js';
 import path from 'path';
 const __dirname = path.resolve();
 
@@ -45,6 +45,15 @@ app.post('/uploadtb', (req, res) => {
   save(fsElements);
   res.send(fsElements);
 });
+
+app.get('/openfsfromdatabase', (req, res) => {
+  // call findall from database
+  getFS((data) => {
+    console.log('2 received from database', data);
+    // send all data received from database
+    res.send(data);
+  });
+})
 
 app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}`)

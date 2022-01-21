@@ -31,7 +31,15 @@ var save = (fsElements) => {
 
 }
 
+var getFS = (callback) => {
+  return FS.find({}, (err, docs) => {
+    if (err) {throw err};
+    console.log('1 send from database', docs);
+    callback(docs);
+  })
+}
 
 
 
-export default save;
+
+export {save, getFS};

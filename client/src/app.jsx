@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import TB from './uploadtb/component/tb.jsx';
 import FS from './fs/component/fs.jsx';
-import Open from './openfs/component/openbutton.jsx'
-const axios = require('axios');
+import Open from './openfs/component/open.jsx'
+import axios from 'axios';
 
 class App extends React.Component {
   constructor (props) {
@@ -26,12 +26,19 @@ class App extends React.Component {
       });
   }
 
+  onChooseFS (fs) {
+    // update this.state.fsElement to be fs chosen
+    this.setState({
+      fsElements: fs
+    })
+  }
+
   render () {
     return (
       <div>
         <TB onSubmit={this.sendData.bind(this)}/>
         <FS elements={this.state.fsElements}/>
-        <Open />
+        <Open onChooseFS={this.onChooseFS.bind(this)}/>
       </div>
     )
   }
