@@ -11,12 +11,10 @@ class Open extends React.Component {
   }
 
   handleClickOpen () {
-    // Send get request to server at url openfsfromdatabase
+
     axios.get('/openfsfromdatabase')
-      // response from server include all fs in database
       .then((res) => {
         console.log('3 res from server', res.data);
-        // setState to equal to this array of fs
         this.setState({
           fsFromDatabase: res.data
         })
@@ -24,7 +22,7 @@ class Open extends React.Component {
   }
 
   handleChooseFS (fsID) {
-    // get the whole fs object from fsID and
+
     var fss = this.state.fsFromDatabase;
     console.log('fss', fss);
     var fs = fss.filter((fsObj) => {
@@ -33,18 +31,19 @@ class Open extends React.Component {
       }
     })[0];
     console.log('fs', fs);
-    // call this.props.onChooseFS with fs object
     this.props.onChooseFS(fs)
   }
 
   render () {
     return (
-      <div>
+      <div className="centerDiv">
+        <h3 className="textCenter"> Choose Financial statement to open by clicking ID </h3>
         <input
-            type="submit"
-            value="Open"
-            name="Open Financial Statement"
-            onClick={this.handleClickOpen.bind(this)}
+          className="button"
+          type="submit"
+          value="Open"
+          name="Open Financial Statement"
+          onClick={this.handleClickOpen.bind(this)}
         />
         <OpenTable
           onChooseFS={this.handleChooseFS.bind(this)}

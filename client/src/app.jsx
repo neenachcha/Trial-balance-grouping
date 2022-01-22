@@ -4,6 +4,7 @@ import TB from './uploadtb/component/tb.jsx';
 import FS from './fs/component/fs.jsx';
 import Open from './openfs/component/open.jsx'
 import axios from 'axios';
+import style from './style.css';
 
 class App extends React.Component {
   constructor (props) {
@@ -36,7 +37,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <TB onSubmit={this.sendData.bind(this)}/>
+        <TB onSubmit={this.sendData.bind(this)} />
         <FS elements={this.state.fsElements}/>
         <Open onChooseFS={this.onChooseFS.bind(this)}/>
       </div>

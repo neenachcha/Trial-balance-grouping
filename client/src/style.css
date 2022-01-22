@@ -1,0 +1,28 @@
+form,
+.centerDiv {
+  margin: auto;
+  width: 70%;
+}
+
+
+
+.textCenter {
+  text-align: center;
+  font-weight: bold;
+  white-space: normal;
+}
+
+th {
+  border-top: 1px solid black;
+  border-bottom: 1px solid grey;
+
+}
+
+.button {
+  margin: auto;
+  width: 10%;
+}
+/*
+.standAlone {
+  margin-bottom: 20px;
+} */

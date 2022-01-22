@@ -87,10 +87,12 @@ class TB extends React.Component {
     });
 
     return (
-      <form action="/uploadtb" method="POST">
-        <div>Trial Balance</div>
-        <CompanyInfo handleCompanyInfo={this.updateCompanyInfo.bind(this)}/>
-        <table>
+      <form action="/uploadtb" method="POST" >
+        <h3 className="textCenter">
+          Trial Balance
+        </h3>
+        <CompanyInfo handleCompanyInfo={this.updateCompanyInfo.bind(this)} />
+        <table className="centerDiv">
           <thead>
             <tr>
               <th>Account description</th>
@@ -107,6 +109,7 @@ class TB extends React.Component {
           value="Submit"
           name="submit"
           onClick={this.handleSubmit.bind(this)}
+          className="button"
         />
       </form>
     );

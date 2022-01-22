@@ -23,15 +23,19 @@ class CompanyInfo extends React.Component {
 
   render () {
     return (
-      <div>
-        <label>
-          Company name:
-          <input type="text" id="companyName" name="companyName" onChange={this.onChange.bind(this)}/>
-        </label>
-        <label>
-          Year:
-          <input type="text" id="year" name="year" onChange={this.onChange.bind(this)} />
-        </label>
+      <div className="centerDiv">
+        <div>
+          <label>
+            Company name :
+            <input type="text" id="companyName" name="companyName" onChange={this.onChange.bind(this)}/>
+          </label>
+        </div>
+        <div>
+          <label>
+            Year :
+            <input type="text" id="year" name="year" onChange={this.onChange.bind(this)} />
+          </label>
+        </div>
       </div>
     );
   }
