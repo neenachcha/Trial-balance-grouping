@@ -36,10 +36,10 @@
 
 ## Feature ##
   ### Grouping feature - Input
-  ![Architecture](https://github.com/rpp33-sdc-violet/Products/blob/main/readmePhoto/backend%20architecture.png)
+  ![Grouping feature - Input](https://github.com/neenachcha/hr-rpp33-mvp/blob/master/readmePhoto/grouping%20input.png)
 
   ### Grouping feature - Output
-  ![Stress Test Results](https://github.com/rpp33-sdc-violet/Products/blob/main/readmePhoto/1800rps.png)
+  ![Grouping feature - Output](https://github.com/neenachcha/hr-rpp33-mvp/blob/master/readmePhoto/grouping%20output.png)
 
   ### Save / reopen from database
 
