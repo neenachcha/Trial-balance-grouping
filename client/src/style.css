@@ -19,6 +19,9 @@ th {
 .button {
   margin: auto;
   width: 10%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 /*
 .standAlone {
